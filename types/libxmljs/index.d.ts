@@ -23,7 +23,7 @@ export declare class XMLDocument {
     encoding(): string;
     encoding(enc: string): void;
     find(xpath: string): Element[];
-    get(xpath: string): Element | undefined;
+    get(xpath: string, namespaces?: { [key: string]: string; }): Element|null;
     node(name: string, content: string): Element;
     root(): Element;
     toString(): string;
